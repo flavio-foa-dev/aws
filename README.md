@@ -75,3 +75,10 @@ Ao configurar o grupo de auto scaling nós habilitamos verificações de integri
 - comandos da AWS CLI para gerenciar instâncias EC2 como describe-instances e stop-instances. etc
 
 ### Amazon VPC (virtual private cloud) redes na aws
+- VPC, basicamente, é o serviço da Amazon que nos permite configurar a rede de nossa infraestrutura na AWS;
+- VPC padrão e as sub-redes que vêm configuradas nela,
+- Cada sub-rede está em uma zona de disponibilidade diferente;
+- Criar uma nova instância EC2  e configurar de forma consciente as configurações de rede.
+- security groups, partindo da premissa deles serem stateful e só suportarem regras de permissão e não de bloqueio;
+- ACLs elas nos permitem regras mais granulares tanto de bloqueio quanto de permissão, além de entendermos que elas são stateless;
+- como utilizá-los em conjunto.
