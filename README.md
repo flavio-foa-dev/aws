@@ -61,3 +61,17 @@ Ao configurar o grupo de auto scaling nós habilitamos verificações de integri
 - configurar um domínio para apontar para o load balancer da AWS através de seu DNS público;
 - escalonamento automático (auto scaling) para que novas instâncias possam ser criadas automaticamente;
 - definir políticas de escala para que regras sejam analisadas e a partir delas, novas instâncias sejam criadas no grupo de auto scaling.
+
+### aws cli
+- aws configure = aws access key id [***********************]
+- aws secret acces key [***********************]
+- aws help
+- CLI documentation
+- default regian name
+- iam controle de acesso
+- mfa autenticacao
+- permissionamento ao criar um novo usuário. Isso e feito através do serviço IAM;
+- AWS CLI, que é a interface de linha de comando para gerenciar tudo na AWS;
+- comandos da AWS CLI para gerenciar instâncias EC2 como describe-instances e stop-instances. etc
+
+### Amazon VPC (virtual private cloud) redes na aws
