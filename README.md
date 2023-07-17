@@ -103,11 +103,31 @@ Configuramos uma nova tabela de rotas para tornar pública a nossa sub-rede que 
 - Como conceder acesso a um usuário através da console;
 - Utilizar o IAM para criar usuários e grupos;
 - Diferença entre as políticas de acesso.
+- Versionamento dos objetos;
+- Configurando um bucket com versionamento;
+- Utilizar comandos s3api;
+- Conceito sobre ciclo de vida dos objetos;
+- Aplicar regras de ciclo de vida.
+- Utilizar o S3 para hospedar um site estático;
+- Vincular o Cloud Front (cdn) ao site estático;
+- Utilizar o S3 através do cloudfront.
+# - Banco de Dados -
+### AWS Redshift  data warehouse
+- serviço da AWS com foco em data warehouse (armazém de dados)
+
+### AWS RDS - banco de dados relacionais
+
+### AWS BDynamoDB - banco de dados NoSQL
+
+### AWS ElasticCache or MemoryDB for Redis - banco de dados em cache
+
+
+
+
+
 
 ### AWS CLI
-Vamos acessar a documentação em https://docs.aws.amazon.com/AmazonS3/latest/userguide/setup-aws-cli.html. Neste link, vamos instalar a CLI da AWS com todas as suas subferramentas para linha de comando. Essa ferramenta não serve apenas para o S3, ela é aplicável, por exemplo, para criação de máquinas virtuais, bancos de dados e outros serviços.
-Versionamento dos objetos;
-Configurando um bucket com versionamento;
-Utilizar comandos s3api;
-Conceito sobre ciclo de vida dos objetos;
-Aplicar regras de ciclo de vida.
+- Vamos acessar a documentação em https://docs.aws.amazon.com/AmazonS3/latest/userguide/setup-aws-cli.html. - - Essa ferramenta é aplicável, por exemplo, para criação de máquinas virtuais, bancos de dados e outros serviços da aws.
+
+### CloudFront cdn
+CloudFront é o serviço de CDN utilizado pela AWS. Podemos configurar o bucket para servir arquivos via S3, mas a latência, nesse caso, só será baixa se os usuários estiverem na mesma localização geográfica do repositório. Para resolver esse problema, usaremos nosso serviço de CDN, para entregar o conteúdo sempre na localização do cliente, via cache.
