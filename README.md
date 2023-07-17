@@ -106,3 +106,8 @@ Configuramos uma nova tabela de rotas para tornar pública a nossa sub-rede que 
 
 ### AWS CLI
 Vamos acessar a documentação em https://docs.aws.amazon.com/AmazonS3/latest/userguide/setup-aws-cli.html. Neste link, vamos instalar a CLI da AWS com todas as suas subferramentas para linha de comando. Essa ferramenta não serve apenas para o S3, ela é aplicável, por exemplo, para criação de máquinas virtuais, bancos de dados e outros serviços.
+Versionamento dos objetos;
+Configurando um bucket com versionamento;
+Utilizar comandos s3api;
+Conceito sobre ciclo de vida dos objetos;
+Aplicar regras de ciclo de vida.
