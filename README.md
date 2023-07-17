@@ -82,3 +82,27 @@ Ao configurar o grupo de auto scaling nós habilitamos verificações de integri
 - security groups, partindo da premissa deles serem stateful e só suportarem regras de permissão e não de bloqueio;
 - ACLs elas nos permitem regras mais granulares tanto de bloqueio quanto de permissão, além de entendermos que elas são stateless;
 - como utilizá-los em conjunto.
+- sudo tcptraceroute www.google.com = mapea o caminho pecorrido
+- a diferença entre um Internet Gateway e um NAT Gateway, ficando claro que o primeiro permite o acesso da internet até nossa sub-rede e vice-versa, enquanto o segundo apenas permite o acesso da sub-rede até a internet;
+- tabelas de rotas da AWS VPC, que permitem que façamos roteamentos de um endereço (ou vários) para outro;
+Configuramos uma nova tabela de rotas para tornar pública a nossa sub-rede que era originalmente privada. Essa tabela de rotas possui uma regra que manda o tráfego para um Internet Gateway;
+- VPC Endpoint que liga diretamente nossa VPC a alguns serviços da AWS, podendo nos fornecer maior performance e redução de custos.
+- Políticas de permissões na AWS;
+- Bastion host para termos um maior controle sobre os acessos em nossas instâncias que estão na sub-rede privada.
+
+### S3 (Amazon Simples storage Service - scalable Storage in the Cloud) armazenamento de objetos
+- service = google drive. dropbox
+- guarda back-up
+- guarde objects
+- bucket = um repositorio
+- urls pre assinadas com token de expiracao
+- Por padrão o acesso aos buckets / objetos é: Restrito. todos os buckets e objetos do Amazon S3 são privados. Somente o proprietário do recurso que é a conta de que criou o recurso pode acessar esse bucket.
+- Para mudarmos o permissionamento de um bucket privado para público é necessário: a mudança da configuração em Block all public access seguindo com a criação de uma policy com as devidas regras de acesso.
+- Criar um bucket Público;
+- Configurar uma policy de acesso;
+- Como conceder acesso a um usuário através da console;
+- Utilizar o IAM para criar usuários e grupos;
+- Diferença entre as políticas de acesso.
+
+### AWS CLI
+Vamos acessar a documentação em https://docs.aws.amazon.com/AmazonS3/latest/userguide/setup-aws-cli.html. Neste link, vamos instalar a CLI da AWS com todas as suas subferramentas para linha de comando. Essa ferramenta não serve apenas para o S3, ela é aplicável, por exemplo, para criação de máquinas virtuais, bancos de dados e outros serviços.
