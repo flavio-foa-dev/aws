@@ -114,10 +114,23 @@ Configuramos uma nova tabela de rotas para tornar pública a nossa sub-rede que 
 # - Banco de Dados -
 ### AWS Redshift  data warehouse
 - serviço da AWS com foco em data warehouse (armazém de dados)
-
 ### AWS RDS - banco de dados relacionais
+- as duas formas possíveis de se gerar backups com RDS:
+Backups automatizados;
+- Snapshots manuais.
+- Restaurar banco de dados no RDS a partir dos backups automatizados;
+- Criar um novo banco de dados a partir de um snapshot manual;
+- Conhecemos o conceito de réplica de leitura e criamos uma para nosso banco de dados;
+- Implantamos mais de uma instância de banco de dados através das configurações de Multi A-Z.
 
-### AWS BDynamoDB - banco de dados NoSQL
+### AWS BDynamoDB(Managed NoSQL Database) - banco de dados NoSQL
+- há muitos dados sendo trafegados de forma intensa em uma aplicação, o DynamoDB pode ser uma escolha
+- banco de dados DynamoDB:
+- Tabelas;
+- Chaves:
+- Chave de partição (partition key);
+- Chave de classificação (sort key ou range attribute).
+- buscamos itens em uma tabela do DynamoDB, usando os modos de busca Scan e Query, a partir do console da AWS.
 
 ### AWS ElasticCache or MemoryDB for Redis - banco de dados em cache
 
