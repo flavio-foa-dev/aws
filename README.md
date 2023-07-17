@@ -131,6 +131,8 @@ Backups automatizados;
 - Chave de partição (partition key);
 - Chave de classificação (sort key ou range attribute).
 - buscamos itens em uma tabela do DynamoDB, usando os modos de busca Scan e Query, a partir do console da AWS.
+- precificação do DynamoDB e conhecemos as unidades de capacidade de leitura e escrita (RCU e WCU);
+- Configuramos auto scaling para garantir a escalabilidade de nossa base de dados no DynamoDB
 
 ### AWS ElasticCache or MemoryDB for Redis - banco de dados em cache
 
