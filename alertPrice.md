@@ -17,3 +17,5 @@ Preencha os detalhes do orçamento, como nome, período do orçamento, período 
 Em Configure thresholds (em português, Configurar limites), você pode definir níveis de alerta para receber notificações quando seus gastos atingirem um determinado valor. Por exemplo, você pode configurar um alerta quando 80% do limite de preço for atingido. Na seção Configure notifications (em português, Configurar notificações), você pode adicionar endereços de email ou números de telefone para receber notificações quando seus gastos ultrapassarem os limites definidos;
 
 Após preencher todas as informações necessárias, clique em Create (em português, Criar) para finalizar a configuração do orçamento.
+
+Após preencher todas as informações necessárias, clique em Create (em português, Criar) para finalizar a configuração do orçamento.
